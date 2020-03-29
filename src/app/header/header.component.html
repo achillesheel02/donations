@@ -1,0 +1,13 @@
+<header
+  class="bx--header"
+  role="banner"
+  [attr.aria-label]="'Donate To A Cause'">
+  <button
+    type="button"
+    (click)="doClick()"
+    [ngClass]="{'bx--header__action--active': active}"
+    class="bx--header__menu-trigger bx--header__action bx--header__menu-toggle">
+    <svg *ngIf="!active" ibmIconMenu20></svg>
+    <svg *ngIf="active" ibmIconClose20></svg>
+  </button>
+</header>
