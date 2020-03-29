@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import {Menu20Module} from '@carbon/icons-angular/lib/menu/20';
 import {Close20Module} from '@carbon/icons-angular/lib/close/20';
+import {HeaderModule} from 'carbon-components-angular';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {Close20Module} from '@carbon/icons-angular/lib/close/20';
     BrowserModule,
     AppRoutingModule,
     Menu20Module,
-    Close20Module
+    Close20Module,
+    HeaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
