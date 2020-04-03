@@ -2,21 +2,26 @@
   class="bx--header"
   role="banner"
   name="Donate To A Cause"
-brand="">
-  <ibm-header-item>
+brand=""
+  [route]="['']">
+  <ibm-header-item
+    [route]="['donations']">
     My Donations
   </ibm-header-item>
-  <ibm-header-item>
+  <ibm-header-item
+    [route]="['account']">
     My Account
   </ibm-header-item>
   <div class="spacer"></div>
   <ibm-header-item>
     Sign Out
   </ibm-header-item>
-  <ibm-header-item>
+  <ibm-header-item
+    [route]="['login']">
     Sign In
   </ibm-header-item>
-  <ibm-header-item>
+  <ibm-header-item
+    [route]="['register']">
     Register
   </ibm-header-item>
 </ibm-header>

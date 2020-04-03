@@ -1,1 +1,29 @@
-<p>login works!</p>
+<div class="content" >
+  <h3 style="margin-top:5rem;margin-bottom: 5rem">Login</h3>
+  <form   fxLayoutGap="10px" fxLayout="column" #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <ibm-label>
+      Email
+      <input
+        ibmText
+        type="email"
+        theme="dark"
+        placeholder="Enter Your Email Here"
+        ngModel name="email"
+        required
+        email>
+    </ibm-label>
+    <ibm-label>
+      Password
+      <input
+        ibmText
+        type="password"
+        theme="dark"
+        placeholder="Enter Your Password Here"
+        ngModel name="password"
+        required>
+    </ibm-label>
+    <div fxLayoutAlign="center center">
+      <button  [disabled]="form.invalid" ibmButton="primary" size="normal">Login</button>
+    </div>
+  </form>
+</div>
